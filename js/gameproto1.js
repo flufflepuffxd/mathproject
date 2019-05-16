@@ -58,15 +58,38 @@ var q = ["<img src='css/image/Addition/Q1/Q1.png' height='500' width='900' borde
                   "<button class=buttons002 onclick=q9c()><img src='css/image/Subtraction/Q4/ans1.png' height='400' width='400' ></button>",
                   "<button class=buttons002 onclick=q10c()><img src='css/image/Subtraction/Q5/ans1.png' height='400' width='400' ></button>"];
 
-        var c = ["Correct</br> 100 Points", "Correct</br> 200 Points", "Correct</br> 300 Points", "Correct</br> 400 Points", "Correct</br> 500 Points", "Correct</br> 600 Points", "Correct</br> 700 Points", "Correct</br> 800 Points", "Correct</br> 900 Points", "Correct</br> 1000 Points"];
-        var i = ["Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect"];
+        var c = ["Correct</br> +100 Points </br> Correct Answer</br><img src='css/image/Addition/Q1/ans1.png' height='400' width='400' border='3'>",
+		"Correct</br> +200 Points </br> Correct Answer</br><img src='css/image/Addition/Q2/ans1.png' height='400' width='400' border='3'>", 
+		"Correct</br> +300 Points </br> Correct Answer</br><img src='css/image/Addition/Q3/ans1.png' height='400' width='400' border='3'>", 
+		"Correct</br> +400 Points </br> Correct Answer</br><img src='css/image/Addition/Q4/ans1.png' height='400' width='400' border='3'>", 
+		"Correct</br> +500 Points </br> Correct Answer</br><img src='css/image/Addition/Q5/ans1.png' height='400' width='400' border='3'>", 
+		"Correct</br> +600 Points </br> Correct Answer</br><img src='css/image/Subtraction/Q1/ans1.png' height='400' width='400' border='3'>", 
+		"Correct</br> +700 Points </br> Correct Answer</br><img src='css/image/Subtraction/Q2/ans1.png' height='400' width='400' border='3'>", 
+		"Correct</br> +800 Points </br> Correct Answer</br><img src='css/image/Subtraction/Q3/ans1.png' height='400' width='400' border='3'>", 
+		"Correct</br> +900 Points </br> Correct Answer</br><img src='css/image/Subtraction/Q4/ans1.png' height='400' width='400' border='3'>", 
+		"Correct</br> +1000 Points </br> Correct Answer</br><img src='css/image/Subtraction/Q5/ans1.png' height='400' width='400' border='3'>"];
+        
+		
+		var i = ["Incorrect </br> Correct Answer</br><img src='css/image/Addition/Q1/ans1.png' height='400' width='400' border='3'>", 
+		"Incorrect </br> Correct Answer</br><img src='css/image/Addition/Q2/ans1.png' height='400' width='400' border='3'>", 
+		"Incorrect </br> Correct Answer</br><img src='css/image/Addition/Q3/ans1.png' height='400' width='400' border='3'>", 
+		"Incorrect </br> Correct Answer</br><img src='css/image/Addition/Q4/ans1.png' height='400' width='400' border='3'>", 
+		"Incorrect </br> Correct Answer</br><img src='css/image/Addition/Q5/ans1.png' height='400' width='400' border='3'>", 
+		"Incorrect </br> Correct Answer</br><img src='css/image/Subtraction/Q1/ans1.png' height='400' width='400' border='3'>", 
+		"Incorrect </br> Correct Answer</br><img src='css/image/Subtraction/Q2/ans1.png' height='400' width='400' border='3'>", 
+		"Incorrect </br> Correct Answer</br><img src='css/image/Subtraction/Q3/ans1.png' height='400' width='400' border='3'>", 
+		"Incorrect </br> Correct Answer</br><img src='css/image/Subtraction/Q4/ans1.png' height='400' width='400' border='3'>", 
+		"Incorrect </br> Correct Answer</br><img src='css/image/Subtraction/Q5/ans1.png' height='400' width='400' border='3'>"];
 
         var n = 0;
         n++;
         var s = 0;
 		
-        s++;
+        
+		
 
+		
+		
         function begin001() {
             disappear001.innerHTML = "";
             message001.innerHTML = "";
@@ -75,17 +98,18 @@ var q = ["<img src='css/image/Addition/Q1/Q1.png' height='500' width='900' borde
             option002.innerHTML = a2[0];
             option003.innerHTML = a3[0];
             option004.innerHTML = a4[0];
-            number001.innerHTML = "<p>" + n++ +"</p>";
+            number001.innerHTML = "<h1>" + n++ + "</h1>";
         }
 
         function q1c() {
+			s+=100;
             answer001.innerHTML = "<div id=green001 >" + c[0] + "</div>";
             option001.innerHTML = "";
             option002.innerHTML = "";
             option003.innerHTML = "";
             option004.innerHTML = "";
             next001.innerHTML = "<button class=buttons001 onclick=new002()>Next</button>";
-            score001.innerHTML ="<p>"+ s++ +"</p>";
+            score001.innerHTML ="<h1>"+ s +"</h1>";
         }
 
         function q1i() {
@@ -105,17 +129,18 @@ var q = ["<img src='css/image/Addition/Q1/Q1.png' height='500' width='900' borde
             option004.innerHTML = a4[1];
             next001.innerHTML = "";
             answer001.innerHTML = "";
-            number001.innerHTML ="<p>"+ n++ +"</p>";
+            number001.innerHTML ="<h1>"+ n++ +"</h1>";
         }
 
         function q2c() {
+			s+=200;
             answer001.innerHTML = "<div id=green001>" + c[1] + "</div>";
             option001.innerHTML = "";
             option002.innerHTML = "";
             option003.innerHTML = "";
             option004.innerHTML = "";
             next001.innerHTML = "<button class=buttons001 onclick=new003()>Next</button>";
-            score001.innerHTML ="<p>"+ s++ +"</p>";
+            score001.innerHTML ="<h1>"+ s +"</h1>";
         }
 
         function q2i() {
@@ -135,17 +160,18 @@ var q = ["<img src='css/image/Addition/Q1/Q1.png' height='500' width='900' borde
             option004.innerHTML = a4[2];
             next001.innerHTML = "";
             answer001.innerHTML = "";
-            number001.innerHTML ="<p>"+ n++ +"</p>";
+            number001.innerHTML ="<h1>"+ n++ +"</h1>";
         }
 
         function q3c() {
+			s+=300;
             answer001.innerHTML = "<div id=green001>" + c[2] + "</div>";
             option001.innerHTML = "";
             option002.innerHTML = "";
             option003.innerHTML = "";
             option004.innerHTML = "";
             next001.innerHTML = "<button class=buttons001 onclick=new004()>Next</button>";
-            score001.innerHTML ="<p>"+ s++ +"</p>";
+            score001.innerHTML ="<h1>"+ s +"</h1>";
         }
 
         function q3i() {
@@ -165,17 +191,18 @@ var q = ["<img src='css/image/Addition/Q1/Q1.png' height='500' width='900' borde
             option004.innerHTML = a4[3];
             next001.innerHTML = "";
             answer001.innerHTML = "";
-            number001.innerHTML ="<p>"+ n++ +"</p>";
+            number001.innerHTML ="<h1>"+ n++ +"</h1>";
         }
 
         function q4c() {
+			s+=400;
             answer001.innerHTML = "<div id=green001>" + c[3] + "</div>";
             option001.innerHTML = "";
             option002.innerHTML = "";
             option003.innerHTML = "";
             option004.innerHTML = "";
             next001.innerHTML = "<button class=buttons001 onclick=new005()>Next</button>";
-            score001.innerHTML ="<p>"+ s++ +"</p>";
+            score001.innerHTML ="<h1>"+ s +"</h1>";
         }
 
         function q4i() {
@@ -195,17 +222,18 @@ var q = ["<img src='css/image/Addition/Q1/Q1.png' height='500' width='900' borde
             option004.innerHTML = a4[4];
             next001.innerHTML = "";
             answer001.innerHTML = "";
-            number001.innerHTML ="<p>"+ n++ +"</p>";
+            number001.innerHTML ="<h1>"+ n++ +"</h1>";
         }
 
         function q5c() {
+			s+=500;
             answer001.innerHTML = "<div id=green001>" + c[4] + "</div>";
             option001.innerHTML = "";
             option002.innerHTML = "";
             option003.innerHTML = "";
             option004.innerHTML = "";
             next001.innerHTML = "<button class=buttons001 onclick=new006()>Next</button>";
-            score001.innerHTML ="<p>"+ s++ +"</p>";
+            score001.innerHTML ="<h1>"+ s +"</h1>";
         }
 
         function q5i() {
@@ -225,17 +253,18 @@ var q = ["<img src='css/image/Addition/Q1/Q1.png' height='500' width='900' borde
             option004.innerHTML = a4[5];
             next001.innerHTML = "";
             answer001.innerHTML = "";
-            number001.innerHTML ="<p>"+ n++ +"</p>";
+            number001.innerHTML ="<h1>"+ n++ +"</h1>";
         }
 
         function q6c() {
+			s+=600;
             answer001.innerHTML = "<div id=green001>" + c[5] + "</div>";
             option001.innerHTML = "";
             option002.innerHTML = "";
             option003.innerHTML = "";
             option004.innerHTML = "";
             next001.innerHTML = "<button class=buttons001 onclick=new007()>Next</button>";
-            score001.innerHTML ="<p>"+ s++ +"</p>";
+            score001.innerHTML ="<h1>"+ s +"</h1>";
         }
 
         function q6i() {
@@ -255,17 +284,18 @@ var q = ["<img src='css/image/Addition/Q1/Q1.png' height='500' width='900' borde
             option004.innerHTML = a4[6];
             next001.innerHTML = "";
             answer001.innerHTML = "";
-            number001.innerHTML ="<p>"+ n++ +"</p>";
+            number001.innerHTML ="<h1>"+ n++ +"</h1>";
         }
 
         function q7c() {
+			s+=700;
             answer001.innerHTML = "<div id=green001>" + c[6] + "</div>";
             option001.innerHTML = "";
             option002.innerHTML = "";
             option003.innerHTML = "";
             option004.innerHTML = "";
             next001.innerHTML = "<button class=buttons001 onclick=new008()>Next</button>";
-            score001.innerHTML ="<p>"+ s++ +"</p>";
+            score001.innerHTML ="<h1>"+ s +"</h1>";
         }
 
         function q7i() {
@@ -285,17 +315,18 @@ var q = ["<img src='css/image/Addition/Q1/Q1.png' height='500' width='900' borde
             option004.innerHTML = a4[7];
             next001.innerHTML = "";
             answer001.innerHTML = "";
-            number001.innerHTML ="<p>"+ n++ +"</p>";
+            number001.innerHTML ="<h1>"+ n++ +"</h1>";
         }
 
         function q8c() {
+			s+=800;
             answer001.innerHTML = "<div id=green001>" + c[7] + "</div>";
             option001.innerHTML = "";
             option002.innerHTML = "";
             option003.innerHTML = "";
             option004.innerHTML = "";
             next001.innerHTML = "<button class=buttons001 onclick=new009()>Next</button>";
-            score001.innerHTML ="<p>"+ s++ +"</p>";
+            score001.innerHTML ="<h1>"+ s +"</h1>";
         }
 
         function q8i() {
@@ -315,17 +346,18 @@ var q = ["<img src='css/image/Addition/Q1/Q1.png' height='500' width='900' borde
             option004.innerHTML = a4[8];
             next001.innerHTML = "";
             answer001.innerHTML = "";
-            number001.innerHTML ="<p>"+ n++ +"</p>";
+            number001.innerHTML ="<h1>"+ n++ +"</h1>";
         }
 
         function q9c() {
+			s+=900;
             answer001.innerHTML = "<div id=green001>" + c[8] + "</div>";
             option001.innerHTML = "";
             option002.innerHTML = "";
             option003.innerHTML = "";
             option004.innerHTML = "";
             next001.innerHTML = "<button class=buttons001 onclick=new010()>Next</button>";
-            score001.innerHTML ="<p>"+ s++ +"</p>";
+            score001.innerHTML ="<h1>"+ s +"</h1>";
         }
 
         function q9i() {
@@ -345,17 +377,18 @@ var q = ["<img src='css/image/Addition/Q1/Q1.png' height='500' width='900' borde
             option004.innerHTML = a4[9];
             next001.innerHTML = "";
             answer001.innerHTML = "";
-            number001.innerHTML ="<p>"+ n++ +"</p>";
+            number001.innerHTML ="<h1>"+ n++ +"</h1>";
         }
 
         function q10c() {
+			s+=1000;
             answer001.innerHTML = "<div id=green001>" + c[9] + "</div>";
             option001.innerHTML = "";
             option002.innerHTML = "";
             option003.innerHTML = "";
             option004.innerHTML = "";
             next001.innerHTML = "<button class=buttons001 onclick=end001()>End of Quiz</button>";
-            score001.innerHTML ="<p>"+ s++ +"</p>";
+            score001.innerHTML ="<h1>"+ s +"</h1>";
         }
 
         function q10i() {
@@ -374,7 +407,7 @@ var q = ["<img src='css/image/Addition/Q1/Q1.png' height='500' width='900' borde
             option002.innerHTML = "";
             option003.innerHTML = "";
             option004.innerHTML = "";
-            next001.innerHTML = "<div id=text001>" + "<button class=buttons001 onclick=repeat001()>Repeat</button>" + "</div>";
+            next001.innerHTML = "<div id=text001>" + "<button class=buttons001 onclick=repeat001()>Submit</button>" + "</div>";
             answer001.innerHTML = "";
         }
 
